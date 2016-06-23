@@ -8,7 +8,7 @@
            
                 <h1>Todo List</h1>
           
-                <a href="TodoDetailts.aspx" class="btn btn-success btn-md">Add Todo</a>
+                <a href="TodoDetails.aspx" class="btn btn-success btn-md">Add Todo</a>
 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="TodoGridView" AutoGenerateColumns="False" OnRowDeleting="TodoGridView_RowDeleting" DataKeyNames="TodoID" >
@@ -23,7 +23,6 @@
 
                     </Columns>
                   </asp:GridView>
-
 
             </div>
          
