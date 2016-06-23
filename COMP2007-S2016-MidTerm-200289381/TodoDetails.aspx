@@ -7,11 +7,15 @@
 
              <div class="form-group">
                 <label class="control-label">Todo Name:</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="TodoNameTextBox" placeholder="TodoName" required="true"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" ID="TodoNameTextBox" placeholder="Todo Name" required="true"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label class="control-label">Todo Notes:</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="TodoNotesTextBox" placeholder="TodoNotes" required="true"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" ID="TodoNotesTextBox" placeholder="Todo Notes" required="true"></asp:TextBox>
+            </div>
+            <div>
+                <asp:CheckBox ID="Check_Completed" runat="server" />
+                <label class="control-label">Completed</label>
             </div>
 
             <div>

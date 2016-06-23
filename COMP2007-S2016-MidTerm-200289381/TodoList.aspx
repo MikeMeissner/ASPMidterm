@@ -10,11 +10,17 @@
           
                 <a href="TodoDetails.aspx" class="btn btn-success btn-md">Add Todo</a>
 
+
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
-                    ID="TodoGridView" AutoGenerateColumns="False" OnRowDeleting="TodoGridView_RowDeleting" DataKeyNames="TodoID" >
+                    ID="TodoGridView" AutoGenerateColumns="False" OnRowDeleting="TodoGridView_RowDeleting" DataKeyNames="TodoID" onrowdatabound="TodoGridView_RowDataBound" onrowupdated="TodoGridView_RowUpdated" onrowupdating="TodoGridView_RowUpdating">
                     <Columns>
                         <asp:BoundField DataField="TodoName" HeaderText="Todo" Visible="true" SortExpression="todoName" />
                         <asp:BoundField DataField="todoNotes" HeaderText="Notes" Visible="true" SortExpression="todoNotes" />
+                        <asp:TemplateField HeaderText="Completed" ItemStyle-HorizontalAlign="Center">
+                            <ItemTemplate>
+                                <asp:CheckBox ID="Check_Completed" runat="server" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     
                           <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
                             NavigateUrl="TodoDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"

@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 using COMP2007_S2016_MidTerm_200289381.Models;
 using System.Web.ModelBinding;
 
+/*  Authors: Michael Meissner
+    Website Name: Todo List
+    Page Description: This page pull data from the db or shows an empty text field depending on if you are performing an edit or a first time add.
+    File Name: TodoDetails.aspx.cs
+*/
+
 namespace COMP2007_S2016_MidTerm_200289381
 {
     public partial class TodoDetails : System.Web.UI.Page

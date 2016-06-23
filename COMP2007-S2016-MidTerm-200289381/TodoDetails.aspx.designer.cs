@@ -31,6 +31,15 @@ namespace COMP2007_S2016_MidTerm_200289381 {
         protected global::System.Web.UI.WebControls.TextBox TodoNotesTextBox;
         
         /// <summary>
+        /// Check_Completed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Check_Completed;
+        
+        /// <summary>
         /// CancelButton control.
         /// </summary>
         /// <remarks>
