@@ -10,7 +10,6 @@
           
                 <a href="TodoDetails.aspx" class="btn btn-success btn-md">Add Todo</a>
 
-
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="TodoGridView" AutoGenerateColumns="False" OnRowDeleting="TodoGridView_RowDeleting" DataKeyNames="TodoID" onrowdatabound="TodoGridView_RowDataBound" onrowupdated="TodoGridView_RowUpdated" onrowupdating="TodoGridView_RowUpdating">
                     <Columns>

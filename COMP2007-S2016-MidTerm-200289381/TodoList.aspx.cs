@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 using COMP2007_S2016_MidTerm_200289381.Models;
 using System.Web.ModelBinding;
 
-/*  Authors: Michael Meissner
-    Website Name: Todo List
-    Page Description: This page pull data from the db and displays it in a gridview it also allows you o delete todos and it can redirect you to a edit page
-    File Name: TodoList.aspx.cs
-*/ 
+/*  Author: Michael Meissner
+ *  Student#: 200289381
+ *  Date: Thursday June 23, 2016
+ *  Website Name: Todo List
+ *  Page Description: This page pull data from the db and displays it in a gridview it also allows you o delete todos and it can redirect you to a edit page
+ *  File Name: TodoList.aspx.cs
+*/
 
 namespace COMP2007_S2016_MidTerm_200289381
 {
@@ -67,7 +69,7 @@ namespace COMP2007_S2016_MidTerm_200289381
         protected void TodoGridView_RowDataBound(object sender, GridViewRowEventArgs e)
         {
 
-            if (e.Row.RowType == DataControlRowType.DataRow) ((CheckBox)e.Row.FindControl("Check_Completed")).Checked = true;
+            //if (e.Row.RowType == DataControlRowType.DataRow) ((CheckBox)e.Row.FindControl("Check_Completed")).Checked = true;
             
         }
 

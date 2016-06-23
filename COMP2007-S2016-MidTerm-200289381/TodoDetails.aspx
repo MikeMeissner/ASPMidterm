@@ -17,7 +17,6 @@
                 <asp:CheckBox ID="Check_Completed" runat="server" />
                 <label class="control-label">Completed</label>
             </div>
-
             <div>
                 <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
                         UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click"/>
@@ -25,6 +24,5 @@
             </div>
         </div>
     </div>
-
 
 </asp:Content>

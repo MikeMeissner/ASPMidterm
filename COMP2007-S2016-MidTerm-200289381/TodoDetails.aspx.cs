@@ -7,10 +7,12 @@ using System.Web.UI.WebControls;
 using COMP2007_S2016_MidTerm_200289381.Models;
 using System.Web.ModelBinding;
 
-/*  Authors: Michael Meissner
-    Website Name: Todo List
-    Page Description: This page pull data from the db or shows an empty text field depending on if you are performing an edit or a first time add.
-    File Name: TodoDetails.aspx.cs
+/*  Author: Michael Meissner
+ *  Student#: 200289381
+ *  Date: Thursday June 23, 2016
+ *  Website Name: Todo List
+ *  Page Description: This page pull data from the db or shows an empty text field depending on if you are performing an edit or a first time add.
+ *  File Name: TodoDetails.aspx.cs
 */
 
 namespace COMP2007_S2016_MidTerm_200289381
@@ -43,6 +45,14 @@ namespace COMP2007_S2016_MidTerm_200289381
                     TodoNameTextBox.Text = updatedDetails.TodoName;
                     TodoNotesTextBox.Text = updatedDetails.TodoNotes;
 
+                    //if (Check_Completed.Checked == true)
+                    //{
+                    //    updatedDetails.Completed = true;
+                    //}
+                    //if (Check_Completed.Checked == false)
+                    //{
+                    //    updatedDetails.Completed = false;
+                    //}
                 }
             }
 
@@ -60,7 +70,6 @@ namespace COMP2007_S2016_MidTerm_200289381
                 //creating new todo object based on the model
                 Todo TodoDetails = new Todo();
 
-
                 int TodoID = 0;
 
                 if (Request.QueryString.Count > 0)// our url has a TodoID in it
@@ -72,10 +81,18 @@ namespace COMP2007_S2016_MidTerm_200289381
 
                 }
 
-
                 //add form data to the new todo record
                 TodoDetails.TodoName = TodoNameTextBox.Text;
                 TodoDetails.TodoNotes = TodoNotesTextBox.Text;
+
+                //if (TodoDetails.Completed == true)
+                //{
+                //    Check_Completed.Checked = true;
+                //}
+                //if (TodoDetails.Completed == false)
+                //{
+                //    Check_Completed.Checked = false;
+                //}
 
                 //use LINQ to ADO.NET to insert record to DB
                 if (TodoID == 0)
